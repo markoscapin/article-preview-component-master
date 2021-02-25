@@ -23,7 +23,6 @@ body {
 .content-box {
     display: flex;
     border-radius: 15px;
-    overflow: hidden;
     width: 75vw;
     max-height: 50vh;
     background-color: white;
@@ -35,7 +34,10 @@ body {
 .img-box {
     width: 40%;
     height: auto;
-    position: relative
+    position: relative;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
 }
 
 .img-box::before {
@@ -120,18 +122,43 @@ p {
     /* filter: invert(50%) sepia(1%) saturate(1349%) hue-rotate(317deg) brightness(87%) contrast(93%); */   
 }
 
+.js-share-button {
+    position: relative;
+}
+
 .nav-social {
     background-color: hsl(217, 19%, 35%);
-    position: relative;
-    bottom: 5rem;
-    padding: 1rem 2rem;
-    color: hsl(214, 17%, 65%);
+    position: absolute;
+    bottom: 4.5rem;
+    left: 50%;
+    padding: 1.2rem 3rem;
+    color: hsla(214, 17%, 65%, 0.8);
     border-radius: 10px;
-    
+    display: flex;
+    letter-spacing: 5px;
+    font-size: 1.3rem;
+    align-items: center;
+    transform: translate(-50%, 0);
+
+}
+
+.nav-social::before {
+    content: "";
+    background-color: hsl(217, 19%, 35%);
+    width: 25px;
+    height: 25px;
+    top: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .nav-social a {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
+}
+
+.nav-social img {
+    width: 1.8rem;
 }
 
 
