@@ -42,7 +42,7 @@ body {
 
 .img-box::before {
     content: "";
-    background: url(/images/drawers.jpg);
+    background: url(images/drawers.jpg);
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,12 +134,11 @@ p {
     padding: 1.2rem 3rem;
     color: hsla(214, 17%, 65%, 0.8);
     border-radius: 10px;
-    display: flex;
+    display: none;
     letter-spacing: 5px;
     font-size: 1.3rem;
     align-items: center;
     transform: translate(-50%, 0);
-
 }
 
 .nav-social::before {
