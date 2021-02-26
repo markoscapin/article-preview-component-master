@@ -84,7 +84,7 @@ p {
 }
 .profile-img {
     width: 3.5rem;
-    height: auto;
+    height: 3.5rem;
     border-radius: 50%;
     
 }
@@ -118,8 +118,7 @@ p {
 }
 
 .share:focus {
-    outline: none;
-    /* filter: invert(50%) sepia(1%) saturate(1349%) hue-rotate(317deg) brightness(87%) contrast(93%); */   
+    outline: none;   
 }
 
 .js-share-button {
@@ -205,6 +204,7 @@ p {
 
     .profile-img {
         width: 2.5rem;
+        height: 2.5rem;
     }
 
     .share {
